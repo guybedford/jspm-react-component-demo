@@ -1,0 +1,11 @@
+{
+  "name": "jspm-react-component-demo",
+  "version": "0.1.1",
+  "registry": "npm",
+  "peerDependencies": {
+    "react": "^0.14.6"
+  },
+  "jspmPackage": true,
+  "main": "jspm-react-component.js",
+  "format": "amd"
+}
