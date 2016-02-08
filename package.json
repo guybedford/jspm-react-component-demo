@@ -24,13 +24,7 @@
       "util": "github:jspm/nodelibs-util@^0.2.0-alpha"
     },
     "overrides": {
-      "github:capaj/systemjs-hot-reloader@0.5.3": {
-        "map": {
-          "./default-listener.js": {
-            "node": "@empty",
-            "production": "@empty"
-          }
-        },
+      "github:capaj/systemjs-hot-reloader@0.5.5": {
         "format": "detect",
         "meta": {}
       },

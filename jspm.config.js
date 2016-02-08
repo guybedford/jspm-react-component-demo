@@ -4,7 +4,6 @@ SystemJS.config({
     "npm:*.json",
     "github:*/*.json"
   ],
-  globalEvaluationScope: false,
   transpiler: "plugin-babel",
 
   map: {
@@ -22,7 +21,7 @@ SystemJS.config({
     "react": "npm:react@0.14.6",
     "react-dom": "npm:react-dom@0.14.6",
     "stream": "github:jspm/nodelibs-stream@0.2.0-alpha",
-    "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.3",
+    "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.5",
     "tty": "github:jspm/nodelibs-tty@0.2.0-alpha",
     "util": "github:jspm/nodelibs-util@0.2.0-alpha"
   },
@@ -41,6 +40,13 @@ SystemJS.config({
         }
       }
     },
+    "github:capaj/systemjs-hot-reloader@0.5.5": {
+      "map": {
+        "debug": "npm:debug@2.2.0",
+        "socket.io-client": "github:socketio/socket.io-client@1.4.5",
+        "weakee": "npm:weakee@1.0.0"
+      }
+    },
     "github:jspm/nodelibs-buffer@0.2.0-alpha": {
       "map": {
         "buffer-browserify": "npm:buffer@4.3.0"
@@ -49,13 +55,6 @@ SystemJS.config({
     "github:jspm/nodelibs-stream@0.2.0-alpha": {
       "map": {
         "stream-browserify": "npm:stream-browserify@2.0.1"
-      }
-    },
-    "github:capaj/systemjs-hot-reloader@0.5.3": {
-      "map": {
-        "debug": "npm:debug@2.2.0",
-        "socket.io-client": "github:socketio/socket.io-client@1.4.4",
-        "weakee": "npm:weakee@0.9.1"
       }
     },
     "npm:babel-code-frame@6.3.13": {
