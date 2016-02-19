@@ -1,7 +1,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react')) :
   typeof define === 'function' && define.amd ? define(['exports', 'react'], factory) :
-  (factory((global.jspmReactComponent = {}),global.React));
+  (factory((global.jspmReactComponent = global.jspmReactComponent || {}),global.React));
 }(this, function (exports,React) { 'use strict';
 
   React = 'default' in React ? React['default'] : React;
@@ -12,23 +12,21 @@
     }
   })
 
-  var _createClass = (function () {
-    function defineProperties(target, props) {
-      for (var i = 0; i < props.length; i++) {
-        var descriptor = props[i];
-        descriptor.enumerable = descriptor.enumerable || false;
-        descriptor.configurable = true;
-        if ("value" in descriptor) descriptor.writable = true;
-        Object.defineProperty(target, descriptor.key, descriptor);
-      }
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
     }
+  }
 
-    return function (Constructor, protoProps, staticProps) {
-      if (protoProps) defineProperties(Constructor.prototype, protoProps);
-      if (staticProps) defineProperties(Constructor, staticProps);
-      return Constructor;
-    };
-  })();
+  function _createClass (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
 
   var _possibleConstructorReturn = (function (self, call) {
     if (!self) {
@@ -54,7 +52,7 @@
     if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
   })
 
-  var HelloWorld = (function (_React$Component) {
+  var HelloWorld = function (_React$Component) {
     _inherits(HelloWorld, _React$Component);
 
     function HelloWorld() {
@@ -75,7 +73,7 @@
     }]);
 
     return HelloWorld;
-  })(React.Component);
+  }(React.Component);
 
   exports.HelloWorld = HelloWorld;
 

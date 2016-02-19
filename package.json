@@ -6,7 +6,7 @@
     },
     "devDependencies": {
       "babel-plugin-transform-react-jsx": "npm:babel-plugin-transform-react-jsx@^6.4.0",
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.4",
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.5",
       "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.1"
     },
     "peerDependencies": {
